@@ -16,7 +16,7 @@ var embed = function(link) {
     var pattern, match, position;
     var patterns = [
         {regex: /youtu\.be\/([\w\-.]+)/, type: 'youtube', url: '//www.youtube.com/embed/%1'},
-        {regex: /youtube\.com(.+)v=([^&]+)/, type: 'youtube', url: '//www.youtube.com/embed/%2'},
+        {regex: /youtube\.com(.+)v=([^&]+)/, type: 'youtube', url: '//www.youtube-nocookie.com/embed/%2'},
         {regex: /vimeo\.com\/([0-9]+)/, type: 'vimeo', url: '//player.vimeo.com/video/%1'},
         {regex: /vimeo\.com\/(.*)\/([0-9]+)/, type: 'vimeo', url: '//player.vimeo.com/video/%2'},
         {regex: /vevo\.com.*\/(\w+)/, type: 'vevo', url: '//cache.vevo.com/assets/html/embed.html?video=%1'}
